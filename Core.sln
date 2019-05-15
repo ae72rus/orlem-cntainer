@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Core", "Core\OrlemSoftware.Core.csproj", "{0D2B12EE-8C12-4B6F-9C85-58F6346D4B02}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Core.Implementation", "Core.Implementation\OrlemSoftware.Core.Implementation.csproj", "{DD8E376F-50C8-43B9-9C03-F36780A2C84A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImplementationTests", "ImplementationTests\ImplementationTests.csproj", "{C6578E2A-779C-4156-A0AB-D18DCDF17AB1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Wpf.Core", "OrlemSoftware.Wpf.Core\OrlemSoftware.Wpf.Core.csproj", "{46E27E38-BEA5-4350-947A-414269587B7E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Wpf.Mvvm.Core", "OrlemSoftware.Wpf.Mvvm.Core\OrlemSoftware.Wpf.Mvvm.Core.csproj", "{42520FC3-9819-452A-8B59-878D6B88DAA6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Wpf.Core.Implementation", "OrlemSoftware.Wpf.Core.Implementation\OrlemSoftware.Wpf.Core.Implementation.csproj", "{3F2E17D1-95D6-4752-860D-DFF1F5D66E75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Wpf.Mvvm.Core.Implementation", "OrlemSoftware.Wpf.Mvvm.Core.Implementation\OrlemSoftware.Wpf.Mvvm.Core.Implementation.csproj", "{898DCAE2-FF94-4DBF-A9CE-E77052AE2EFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTestApp", "WpfTestApp\WpfTestApp.csproj", "{F4EDCDF8-E23C-420A-84B4-FF7FB76B0080}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrlemSoftware.Core.Implementation.ASPNet", "OrlemSoftware.CoreImplementation.ASPNet\OrlemSoftware.Core.Implementation.ASPNet.csproj", "{909CC768-F0E3-46E6-B6FA-4DE61B27B8DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetTests", "AspNetTests\AspNetTests.csproj", "{50602F30-F34B-4CAD-9A69-52E03BB126BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D2B12EE-8C12-4B6F-9C85-58F6346D4B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2B12EE-8C12-4B6F-9C85-58F6346D4B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2B12EE-8C12-4B6F-9C85-58F6346D4B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2B12EE-8C12-4B6F-9C85-58F6346D4B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD8E376F-50C8-43B9-9C03-F36780A2C84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD8E376F-50C8-43B9-9C03-F36780A2C84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD8E376F-50C8-43B9-9C03-F36780A2C84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD8E376F-50C8-43B9-9C03-F36780A2C84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6578E2A-779C-4156-A0AB-D18DCDF17AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6578E2A-779C-4156-A0AB-D18DCDF17AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6578E2A-779C-4156-A0AB-D18DCDF17AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6578E2A-779C-4156-A0AB-D18DCDF17AB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46E27E38-BEA5-4350-947A-414269587B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46E27E38-BEA5-4350-947A-414269587B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46E27E38-BEA5-4350-947A-414269587B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46E27E38-BEA5-4350-947A-414269587B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42520FC3-9819-452A-8B59-878D6B88DAA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42520FC3-9819-452A-8B59-878D6B88DAA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42520FC3-9819-452A-8B59-878D6B88DAA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42520FC3-9819-452A-8B59-878D6B88DAA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F2E17D1-95D6-4752-860D-DFF1F5D66E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2E17D1-95D6-4752-860D-DFF1F5D66E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2E17D1-95D6-4752-860D-DFF1F5D66E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2E17D1-95D6-4752-860D-DFF1F5D66E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898DCAE2-FF94-4DBF-A9CE-E77052AE2EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898DCAE2-FF94-4DBF-A9CE-E77052AE2EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898DCAE2-FF94-4DBF-A9CE-E77052AE2EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898DCAE2-FF94-4DBF-A9CE-E77052AE2EFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EDCDF8-E23C-420A-84B4-FF7FB76B0080}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EDCDF8-E23C-420A-84B4-FF7FB76B0080}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EDCDF8-E23C-420A-84B4-FF7FB76B0080}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EDCDF8-E23C-420A-84B4-FF7FB76B0080}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909CC768-F0E3-46E6-B6FA-4DE61B27B8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909CC768-F0E3-46E6-B6FA-4DE61B27B8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909CC768-F0E3-46E6-B6FA-4DE61B27B8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909CC768-F0E3-46E6-B6FA-4DE61B27B8DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50602F30-F34B-4CAD-9A69-52E03BB126BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50602F30-F34B-4CAD-9A69-52E03BB126BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50602F30-F34B-4CAD-9A69-52E03BB126BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50602F30-F34B-4CAD-9A69-52E03BB126BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB7ABEDC-316F-496A-8347-437823BA3B3A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://orlem.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Core\\OrlemSoftware.Core.csproj
+		SccProjectName1 = Core
+		SccLocalPath1 = Core
+		SccProjectUniqueName2 = Core.Implementation\\OrlemSoftware.Core.Implementation.csproj
+		SccProjectName2 = Core.Implementation
+		SccLocalPath2 = Core.Implementation
+		SccProjectUniqueName3 = ImplementationTests\\ImplementationTests.csproj
+		SccProjectName3 = ImplementationTests
+		SccLocalPath3 = ImplementationTests
+		SccProjectUniqueName4 = OrlemSoftware.Wpf.Core\\OrlemSoftware.Wpf.Core.csproj
+		SccProjectName4 = OrlemSoftware.Wpf.Core
+		SccLocalPath4 = OrlemSoftware.Wpf.Core
+		SccProjectUniqueName5 = OrlemSoftware.Wpf.Mvvm.Core\\OrlemSoftware.Wpf.Mvvm.Core.csproj
+		SccProjectName5 = OrlemSoftware.Wpf.Mvvm.Core
+		SccLocalPath5 = OrlemSoftware.Wpf.Mvvm.Core
+		SccProjectUniqueName6 = OrlemSoftware.Wpf.Core.Implementation\\OrlemSoftware.Wpf.Core.Implementation.csproj
+		SccProjectName6 = OrlemSoftware.Wpf.Core.Implementation
+		SccLocalPath6 = OrlemSoftware.Wpf.Core.Implementation
+		SccProjectUniqueName7 = OrlemSoftware.Wpf.Mvvm.Core.Implementation\\OrlemSoftware.Wpf.Mvvm.Core.Implementation.csproj
+		SccProjectName7 = OrlemSoftware.Wpf.Mvvm.Core.Implementation
+		SccLocalPath7 = OrlemSoftware.Wpf.Mvvm.Core.Implementation
+		SccProjectUniqueName8 = WpfTestApp\\WpfTestApp.csproj
+		SccProjectName8 = WpfTestApp
+		SccLocalPath8 = WpfTestApp
+		SccProjectUniqueName9 = OrlemSoftware.CoreImplementation.ASPNet\\OrlemSoftware.Core.Implementation.ASPNet.csproj
+		SccProjectName9 = OrlemSoftware.CoreImplementation.ASPNet
+		SccLocalPath9 = OrlemSoftware.CoreImplementation.ASPNet
+		SccProjectUniqueName10 = AspNetTests\\AspNetTests.csproj
+		SccProjectName10 = AspNetTests
+		SccLocalPath10 = AspNetTests
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' == '' ">0.0.0.1-local</Version>
+    <Version Condition=" '$(BUILD_BUILDNUMBER)' != '' ">$(BUILD_BUILDNUMBER)</Version>
+    <TargetFrameworks>net471;</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>OrlemSoftwareSystemKey.pfx</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <Authors>Orlem</Authors>
+    <Company>OrlemSoftware</Company>
+    <Description>Implementation of Wpf.Mvvm.Core</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrlemSoftware.Core" Version="2018.0.1.5" />
+    <PackageReference Include="OrlemSoftware.Wpf.Core" Version="2018.0.1.3" />
+    <PackageReference Include="OrlemSoftware.Wpf.Mvvm.Core" Version="2018.0.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+
+</Project>
