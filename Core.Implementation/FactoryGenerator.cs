@@ -10,14 +10,14 @@ namespace OrlemSoftware.Basics.Core.Implementation
 {
     class FactoryGenerator
     {
-        private static readonly Dictionary<string, ModuleBuilder> _moduleBuildersBuildersDict = new Dictionary<string, ModuleBuilder>();
+        private static readonly Dictionary<string, ModuleBuilder> _assemblyNameModuleBuilderDict = new Dictionary<string, ModuleBuilder>();
         private static readonly List<string> _createdTypeNames = new List<string>();
         public Type GenerateFactory<TFactory, TInterface, TImplementation>(string dynamicAssemblyName)
             where TFactory : IFactory
             where TImplementation : TInterface
         {
-            var asmName = string.IsNullOrWhiteSpace(dynamicAssemblyName) 
-                ? "OrlemDynamicAssembly" 
+            var asmName = string.IsNullOrWhiteSpace(dynamicAssemblyName)
+                ? "OrlemDynamicAssembly"
                 : dynamicAssemblyName;
 
             return CreateFactoryType(typeof(TFactory), typeof(TInterface), typeof(TImplementation), asmName);
@@ -25,14 +25,14 @@ namespace OrlemSoftware.Basics.Core.Implementation
 
         private ModuleBuilder getModuleBuilder(string assemblyName)
         {
-            if (_moduleBuildersBuildersDict.ContainsKey(assemblyName))
-                return _moduleBuildersBuildersDict[assemblyName];
+            if (_assemblyNameModuleBuilderDict.ContainsKey(assemblyName))
+                return _assemblyNameModuleBuilderDict[assemblyName];
 
             var asmName = new AssemblyName(assemblyName);
             var assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(asmName, AssemblyBuilderAccess.Run);
-            _moduleBuildersBuildersDict[assemblyName] = assemblyBuilder.DefineDynamicModule("MainModule");
+            _assemblyNameModuleBuilderDict[assemblyName] = assemblyBuilder.DefineDynamicModule("MainModule");
 
-            return _moduleBuildersBuildersDict[assemblyName];
+            return _assemblyNameModuleBuilderDict[assemblyName];
         }
 
         private Type CreateFactoryType(Type tFactory, Type tInterface, Type tImplementation, string dynamicAssemblyName)
@@ -146,7 +146,9 @@ namespace OrlemSoftware.Basics.Core.Implementation
                     else
                         ilGen.Emit(OpCodes.Castclass, typeof(object));//cast to object reference type
 
+#if DEBUG
                     ilGen.EmitWriteLine($"cur: {i} total: {parameterTypes.Length}");//trace
+#endif
                     ilGen.Emit(OpCodes.Stelem, typeof(object));//put obj to arr at specified index (which was loaded just before obj). obj will be boxed or casted to object in process
 
                     errorMessageBuilder.Append(currentType.Name);
