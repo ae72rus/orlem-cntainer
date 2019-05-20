@@ -184,6 +184,8 @@ namespace ImplementationTests
             Assert.AreEqual(0, instance2.A);
             Assert.AreEqual(0, instance2.B);
             Assert.AreEqual("str", instance2.C);
+
+            Assert.ThrowsException<NotImplementedException>(() => factory.Create(0, "str"));
         }
 
         [TestMethod]

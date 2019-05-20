@@ -7,5 +7,6 @@ namespace ImplementationTests.TestData
         IClass Create(int a, int b);
         IClass Create(string c);
         IClass Create();
+        IClass Create(int i, string s);
     }
 }
